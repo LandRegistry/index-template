@@ -35,7 +35,8 @@ $govuk-font-family: "Avenir Next", "Arial", "sans-serif";
 // core styles /////////////////////////////////
 // /////////////////////////////////////////////////////////////////////
 
-// font - because i cant find how to make the override above work - doesn't seem to work
+// font - because i cant find how to make the $govuk-font-family override above work
+// !important is bad - shouldn't be using it.  TODO
 
 * {
 	font-family: "Avenir Next", "Arial", "sans-serif" !important;
