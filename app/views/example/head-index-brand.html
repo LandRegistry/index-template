@@ -1,0 +1,39 @@
+<!-- Social media unfurl - twitter, slack, etc -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="Design Community" />
+<meta name="twitter:creator" content="Design Community" />
+<meta name="twitter:title" content="template design index">
+<meta name="twitter:description" content="template index: to introduce a service/product/project from a designers perspective - overview, design assets, useful stuff">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/LandRegistry/index-template/master/app/assets/images/social-unfurl.png">
+<!-- <meta name="twitter:label1" value="Service Status" />
+<meta name="twitter:data1" value="Closed April 2019" /> -->
+
+<meta property="og:url" content="https://index-template.herokuapp.com/" />
+<meta property="og:title" content="template design index" />
+<meta property="og:description" content="template index: to introduce a service/product/project from a designers perspective - overview, design assets, useful stuff" />
+<meta property="og:image" content="https://raw.githubusercontent.com/LandRegistry/index-template/master/app/assets/images/social-unfurl.png" />
+
+<!--[if lte IE 8]><link href="/public/stylesheets/application-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if gt IE 8]><link href="/public/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+
+<link href="/public/stylesheets/design-index.css" rel="stylesheet" type="text/css" />
+<link href="/public/stylesheets/this-index.css" rel="stylesheet" type="text/css" />
+<!-- <link href="/public/stylesheets/unbranded.css" rel="stylesheet" type="text/css" /> -->
+
+{% for stylesheetUrl in extensionConfig.stylesheets %}
+  <link href="{{ stylesheetUrl }}" rel="stylesheet" type="text/css" />
+{% endfor %}
+
+
+
+
+{% block header %}
+<header class="govuk-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <span><a class="govuk-header__link govuk-header__link--service-name" href="/">Jugglers Register</a></span>
+    <div class="govuk-header-tag">
+      Up to date information about all street performers licensed to juggle 
+    </div>
+  </div>
+</header>
+{% endblock %}
